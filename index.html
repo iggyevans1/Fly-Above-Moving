@@ -2,392 +2,82 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Fly Above Moving Company | Chicago Movers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Professional moving company in Chicago. Same-day moves, fair pricing. Call now for a free quote.">
- 
+
 <style>
-/* ===== RESET ===== */
-* {
-    box-sizing: border-box;
-}/* ===== REVIEWS ===== */
-.reviews {
-    background: #f7fbff;
-    padding: 90px 20px;
-    text-align: center;
-}
-
-.reviews h2 {
-    font-size: 34px;
-    margin-bottom: 10px;
-}
-
-.google-rating {
-    font-size: 18px;
-    margin-bottom: 40px;
-    color: #0b3c5d;
-}
-
-.review-slider {
-    max-width: 800px;
-    margin: auto;
-    position: relative;
-}
-
-.review-card {
-    display: none;
-    background: white;
-    padding: 40px;
-    border-radius: 22px;
-    box-shadow: 0 20px 40px rgba(11,60,93,0.2);
-}
-
-.review-card.active {
-    display: block;
-}
-
-.review-avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-
-.review-stars {
-    color: #facc15;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.review-text {
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.review-name {
-    font-weight: bold;
-}
-
-.review-btn {
-    display: inline-block;
-    margin-top: 35px;
-    padding: 14px 34px;
-    background: linear-gradient(135deg, #38bdf8, #2563eb);
-    color: white;
-    text-decoration: none;
-    border-radius: 40px;
-    font-size: 16px;
-}
-
-
-/* ===== BASE ===== */
-<script>
-let currentReview = 0;
-const reviews = document.querySelectorAll('.review-card');
-
-setInterval(() => {
-    reviews[currentReview].classList.remove('active');
-    currentReview = (currentReview + 1) % reviews.length;
-    reviews[currentReview].classList.add('active');
-}, 5000);
-</script>
-
-body {
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #eaf6ff;
-    color: #0b3c5d;
-}
-
-/* ===== HERO ===== */
-.hero {
-    height: 100vh;
-    background: url("images/hero.jpg") center / cover no-repeat;
-    background-attachment: fixed;
-    position: relative;
-}
-
-.hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        rgba(234,246,255,0.2),
-        rgba(11,60,93,0.75)
-    );
-}
-
-.hero-content {
-    position: relative;
-    z-index: 9999;
-    text-align: center;
-    padding: 90px 20px;
-}
-
-.logo {
-    width: 160px;
-    margin-bottom: 25px;
-}
-
-.hero h1 {
-    font-size: 42px;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 20px;
-    color: #eaf6ff;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 16px 40px;
-    background: linear-gradient(135deg, #38bdf8, #2563eb);
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 50px;
-}
-
-.phone {
-    margin-top: 25px;
-    font-size: 26px;
-    color: #fff;
-    font-weight: bold;
-}
-
-/* ===== SERVICES ===== */
-.services {
-    padding: 90px 20px;
-    background: #cfe9fb;
-    text-align: center;
-}
-
-.services h2 {
-    font-size: 34px;
-    margin-bottom: 20px;
-}
-
-.services p {
-    font-size: 18px;
-    line-height: 2;
-} <!-- TESTIMONIAL -->
-<section class="testimonial reveal">
-    <h2>What Our Clients Say</h2>
-
-    <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-
-        <div class="testimonial-text">
-            “Amazing service! The movers were professional, fast, and very careful
-            with my furniture. Everything was delivered on time with no damage.
-            Highly recommend Fly Above Moving!”
-        </div>
-
-        <div class="client">
-            — Michael R., Chicago IL
-        </div>
-    </div>
-</section>
-<!-- REVIEWS -->
-<section class="reviews reveal">
-    <h2>What Our Clients Say</h2>
-    <div class="google-rating">⭐ Rated 5.0 on Google Reviews</div>
-
-    <div class="review-slider">
-
-        <div class="review-card active">
-            <img src="images/reviews/client1.jpg" class="review-avatar" alt="">
-            <div class="review-stars">★★★★★</div>
-            <div class="review-text">
-                “Outstanding service! The team arrived on time, worked fast,
-                and handled everything with care. Best moving experience in Chicago.”
-            </div>
-            <div class="review-name">— Michael R., Chicago IL</div>
-        </div>
-
-        <div class="review-card">
-            <img src="images/reviews/client2.jpg" class="review-avatar" alt="">
-            <div class="review-stars">★★★★★</div>
-            <div class="review-text">
-                “Very professional movers. Fair pricing and excellent communication.
-                I would definitely use Fly Above Moving again.”
-            </div>
-            <div class="review-name">— Sarah L., Evanston IL</div>
-        </div>
-
-        <div class="review-card">
-            <img src="images/reviews/client3.jpg" class="review-avatar" alt="">
-            <div class="review-stars">★★★★★</div>
-            <div class="review-text">
-                “Smooth and stress-free move. They packed everything perfectly
-                and delivered without any damage. Highly recommended!”
-            </div>
-            <div class="review-name">— David K., Oak Park IL</div>
-        </div>
-
-    </div>
-
-    <a href="#" class="review-btn">Read more reviews</a>
-</section>
-
-
-/* ===== FORM ===== */
-.form-section {
-    padding: 90px 20px;
-}
-
-.form-box {
-    max-width: 420px;
-    margin: auto;
-    background: #fff;
-    padding: 40px;
-    border-radius: 18px;
-    box-shadow: 0 20px 40px rgba(11,60,93,0.25);
-}
-
-.form-box h3 {
-    text-align: center;
-    font-size: 26px;
-    margin-bottom: 25px;
-}
-
-input, button {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 18px;
-    font-size: 16px;
-    border-radius: 10px;
-}
-
-input {
-    border: 1px solid #cfe9fb;
-}
-
-button {
-    border: none;
-    background: linear-gradient(135deg, #38bdf8, #2563eb);
-    color: #fff;
-    font-weight: bold;
-}
-
-/* ===== INFO IMAGE ===== */
-.info-image img {
-    width: 100%;
-    max-width: 1200px;
-    display: block;
-    margin: auto;
-}
-
-/* ===== FOOTER ===== */
-footer {
-    background: #0b3c5d;
-    color: #fff;
-    text-align: center;
-    padding: 25px;
-}
-
-/* ===== SCROLL ANIMATION ===== */
-.reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.9s ease;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* ===== CALL BUTTON ===== */
-.call-now {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #22c55e;
-    color: #fff;
-    padding: 16px 26px;
-    border-radius: 50px;
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Segoe UI,Arial,sans-serif;background:#eaf6ff;color:#0b3c5d}
+.hero{height:100vh;background:url('images/hero.jpg') center/cover no-repeat;position:relative}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(rgba(234,246,255,.2),rgba(11,60,93,.75))}
+.hero-content{position:relative;z-index:2;text-align:center;padding:90px 20px}
+.logo{width:160px;margin-bottom:25px}
+.hero h1{font-size:42px;color:#fff}
+.hero p{font-size:20px;color:#eaf6ff}
+.btn{display:inline-block;margin-top:30px;padding:16px 40px;background:linear-gradient(135deg,#38bdf8,#2563eb);color:#fff;text-decoration:none;border-radius:50px}
+.phone{margin-top:25px;font-size:26px;color:#fff;font-weight:bold}
+.services,.reviews,.form-section{padding:90px 20px;text-align:center}
+.services{background:#cfe9fb}
+.review-card{background:#fff;padding:40px;border-radius:22px;max-width:600px;margin:30px auto;box-shadow:0 20px 40px rgba(11,60,93,.2)}
+.form-box{max-width:420px;margin:auto;background:#fff;padding:40px;border-radius:18px;box-shadow:0 20px 40px rgba(11,60,93,.25)}
+input,button{width:100%;padding:15px;margin-bottom:18px;border-radius:10px;font-size:16px}
+button{border:none;background:linear-gradient(135deg,#38bdf8,#2563eb);color:#fff;font-weight:bold}
+.info-image img{width:100%;max-width:1200px;margin:auto;display:block}
+footer{background:#0b3c5d;color:#fff;text-align:center;padding:25px}
+.call-now{position:fixed;bottom:20px;right:20px;background:#22c55e;color:#fff;padding:16px 26px;border-radius:50px;text-decoration:none;font-weight:bold}
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<section class="hero reveal">
-    <div class="hero-content">
-        <img src="images/logo.jpg" class="logo" alt="Fly Above Moving">
-        <h1>Chicago Moving Company</h1>
-        <p>Same-Day Moves • Fair Pricing • Trusted Movers</p>
-        <a href="#form" class="btn">Get Free Quote</a>
-        <div class="phone">📞 872-251-0096</div>
-    </div>
+<section class="hero">
+  <div class="hero-content">
+    <img src="images/logo.jpg" class="logo" alt="Fly Above Moving">
+    <h1>Chicago Moving Company</h1>
+    <p>Same-Day Moves • Fair Pricing • Trusted Movers</p>
+    <a href="#form" class="btn">Get Free Quote</a>
+    <div class="phone">📞 872-251-0096</div>
+  </div>
 </section>
 
-<!-- SERVICES -->
-<section class="services reveal">
-    <h2>Why Choose Us</h2>
-    <p>
-        ✔ Same-Day Availability<br>
-        ✔ Professional Movers<br>
-        ✔ City & Suburbs<br>
-        ✔ Residential & Commercial
-    </p>
+<section class="services">
+  <h2>Why Choose Us</h2>
+  <p>
+    ✔ Same-Day Availability<br>
+    ✔ Professional Movers<br>
+    ✔ City & Suburbs<br>
+    ✔ Residential & Commercial
+  </p>
 </section>
 
-<!-- FORM -->
-<section class="form-section reveal" id="form">
-    <div class="form-box">
-        <h3>Request Free Quote</h3>
-
-        <form action="https://formsubmit.co/iggyevans1@gmail.com" method="POST">
-            <input type="hidden" name="_captcha" value="New Application">
-
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="tel" name="phone" placeholder="Phone Number" required>
-
-            <button type="submit">Send Request</button>
-        </form>
-
-        <p style="text-align:center;">
-            Or call <strong>872-251-0096</strong>
-        </p>
-    </div>
+<section class="reviews">
+  <h2>What Our Clients Say</h2>
+  <div class="review-card">
+    ★★★★★<br><br>
+    “Outstanding service! Best moving experience in Chicago.”<br><br>
+    — Michael R.
+  </div>
 </section>
 
-<!-- INFO -->
-<section class="info-image reveal">
-    <img src="images/info.jpg" alt="Moving Information">
+<section class="form-section" id="form">
+  <div class="form-box">
+    <h3>Request Free Quote</h3>
+    <form action="https://formsubmit.co/iggyevans1@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <button type="submit">Send Request</button>
+    </form>
+  </div>
 </section>
 
-<footer>
-   • Fly Above Moving Company • Chicago IL •
-</footer>
+<section class="info-image">
+  <img src="images/info.jpg" alt="Moving service">
+</section>
 
-<a href="tel:+18722510096" class="call-now">📞 CALL NOW </a>
+<footer>• Fly Above Moving Company • Chicago IL •</footer>
 
-<script>
-function revealOnScroll() {
-    document.querySelectorAll('.reveal').forEach(el => {
-        if (el.getBoundingClientRect().top < window.innerHeight - 100) {
-            el.classList.add('active');
-        }
-    });
-}
-
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
-</script>
+<a href="tel:+18722510096" class="call-now">📞 CALL NOW</a>
 
 </body>
 </html>
